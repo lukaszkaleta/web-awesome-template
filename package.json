@@ -1,16 +1,14 @@
 {
-  "name": "litloginfe",
+  "name": "web-awesome-template",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Scaffolded Lit web components app bundled with esbuild",
+  "description": "Scaffolded for web awesome and Lit with esbuild",
   "scripts": {
-    "preinstall": "node -e \"try{require('esbuild')}catch(e){process.exit(0)}\" || true",
     "dev": "esbuild src/index.js --bundle --sourcemap --outdir=public --format=esm --watch --servedir=public --serve=localhost:5173",
     "build": "node build.mjs",
     "clean": "node -e \"(async()=>{const fs=require('fs');const p=['dist','public/bundle.js','public/bundle.js.map'];for(const f of p){if(fs.existsSync(f)){fs.rmSync(f,{recursive:true,force:true})}}})();\"",
     "preview": "npx serve -s dist -l 5173",
-    "gen:auth-client": "node scripts/generate-auth-client.mjs"
   },
   "keywords": [
     "lit",
@@ -22,8 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "@awesome.me/webawesome": "^3.0.0-beta.6",
-    "lit": "^3.2.0",
-    "maplibre-gl": "^5.8.0"
+    "lit": "^3.2.0"
   },
   "devDependencies": {
     "esbuild": "^0.21.5"
