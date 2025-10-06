@@ -1,8 +1,6 @@
 ## Quick start
 1. Install deps
    - npm: `npm install`
-   - pnpm: `pnpm install`
-   - yarn: `yarn`
 
 2. Start dev server
    - `npm run dev`
@@ -20,7 +18,6 @@
 - `npm run build` — Bundle to `dist/` and copy static files from `public/`
 - `npm run clean` — Remove build artifacts
 - `npm run preview` — Serve `dist/` locally
-- `npm run gen:auth-client` — Generate plain JavaScript Fetch client from the Swagger/OpenAPI spec into `src/auth-client/`
 
 ## Project layout
 ```
@@ -29,7 +26,6 @@ public/
 src/
   index.js           # App entry; imports your web components
   components/
-    sign-in-form.js        # Components
-    ...
+    ....        # Components
 build.mjs            # Build script using esbuild API (production)
 ```
