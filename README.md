@@ -4,7 +4,7 @@
 
 2. Start dev server
    - `npm run dev`
-   - Opens a local server on http://localhost:5173 (or the next free port)
+   - Opens a local server on http://localhost:3000 (or the next free port)
 
 3. Build for production
    - `npm run build`
